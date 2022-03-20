@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Mes_POTG_Overwatch.UserControl_TempsFort"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mes_POTG_Overwatch"
+             mc:Ignorable="d" Height="97.238" Width="309.333" BorderBrush="White" BorderThickness="1" MouseDown="UserControl_MouseDown">
+    <UserControl.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="Supprimer" Click="MenuItem_Click"/>
+            <MenuItem Header="Ouvrir dans l'explorateur de fichier" Click="MenuItem_Click_2" />
+            <MenuItem Header="Changer le héro" Click="MenuItem_Click_1"/>
+            <MenuItem x:Name="isPOTG" Header="Action de la partie" IsCheckable="True" Checked="isPOTG_Checked" Unchecked="isPOTG_Unchecked" />
+            <MenuItem x:Name="AjouterALaCompilation" Header="Ajouter à la compilation" Click="AjouterALaCompilation_Click" IsEnabled="False" />
+        </ContextMenu>
+    </UserControl.ContextMenu>
+    <UserControl.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFAEEDFF" Offset="0"/>
+            <GradientStop Color="White" Offset="0.502"/>
+            <GradientStop Color="#FFAEEDFF" Offset="1"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid>
+        <TextBlock  TextWrapping="WrapWithOverflow" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="235" Height="40" FontFamily="Verdana" FontSize="13" Text="{Binding Titre}"/>
+        <Image x:Name="img_hero" HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="85" OpacityMask="Black" />
+        <Label x:Name="label_ap" Content="Action de la partie" HorizontalAlignment="Left" Margin="190,70,-5,0" VerticalAlignment="Top" Width="122" Foreground="#FFFF8000" FontWeight="Bold" Visibility="Hidden"/>
+        <Label x:Name="label_date" Content="Label" HorizontalAlignment="Left" Margin="56,77,0,-4" VerticalAlignment="Top" Width="105" FontSize="9"/>
+
+    </Grid>
+</UserControl>

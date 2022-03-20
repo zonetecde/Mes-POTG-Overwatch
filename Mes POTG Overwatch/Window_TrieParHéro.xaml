@@ -1,0 +1,17 @@
+﻿<Window x:Class="Mes_POTG_Overwatch.Window_TrieParHéro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mes_POTG_Overwatch"
+        mc:Ignorable="d"
+        Title="Window_TrieParHéro" Height="705.71" Width="779.618" WindowStartupLocation="CenterScreen" Icon="download.ico">
+    <Grid>
+        <ScrollViewer Margin="10,57,10,5" >
+            <WrapPanel x:Name="WrapPanel_héro" />
+        </ScrollViewer>
+        <Button Content="Tout cocher" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="146" Height="30" Click="Button_Click"/>
+        <Button Content="Tout décocher" HorizontalAlignment="Left" Margin="161,22,0,0" VerticalAlignment="Top" Width="146" Height="30" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
